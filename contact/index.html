@@ -78,9 +78,9 @@
       <!--
         This form posts to Formspree so it works on static hosting like GitHub Pages —
         no server of your own required. See README.md, "Activate the contact form",
-        using the configured Formspree endpoint.
+        for the one-time setup step that points this at info@a1traffic-solutions.com.
       -->
-      <form action="https://formspree.io/f/xoeqkqnl" method="POST" data-contact-form novalidate>
+      <form action="https://formspree.io/f/xoeqkqnl" method="POST" data-contact-form target="formspree-response-frame">
         <div class="form-grid">
           <div class="form-row">
             <div>
@@ -101,7 +101,8 @@
             <textarea id="message" name="message" placeholder="Tell us about your project or survey requirement" required></textarea>
           </div>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="_source" value="A1 Traffic Solutions website contact form">
+          <input type="hidden" name="_next" value="https://a1traffic-solutions.com/contact/?sent=1">
+          <iframe name="formspree-response-frame" id="formspree-response-frame" title="Form submission response" style="display:none" aria-hidden="true"></iframe>
           <div>
             <button type="submit" class="btn btn-primary">Send message</button>
             <p class="form-status" role="status" aria-live="polite"></p>
