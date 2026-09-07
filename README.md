@@ -46,7 +46,7 @@ No build step is required.
 
 The contact form currently contains a placeholder Formspree endpoint. Replace:
 
-`https://formspree.io/f/xoeqkqnl`
+`https://formspree.io/f/YOUR_FORM_ID`
 
 with the real Formspree endpoint before expecting direct online form delivery. Until then, the existing JavaScript fallback opens the visitor's email client.
 
